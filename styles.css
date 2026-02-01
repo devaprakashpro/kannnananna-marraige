@@ -1,0 +1,150 @@
+:root {
+    --primary-color: #D62C49;
+    /* Premium Red/Pink */
+    --primary-hover: #b01e36;
+    --text-dark: #1a1a1a;
+    --text-gray: #666666;
+    --bg-light: #FFFCF9;
+    /* Warm off-white */
+    --white: #ffffff;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Outfit', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+h1,
+h2,
+h3,
+.font-heading,
+.navbar-brand {
+    font-family: var(--font-heading);
+}
+
+/* Navbar Customization */
+.navbar {
+    background-color: rgba(255, 252, 249, 0.95);
+    /* Slight blur/transparency matching bg */
+    backdrop-filter: blur(10px);
+}
+
+.brand-text {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--primary-color);
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* Button Overrides */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+.btn-light {
+    background-color: #F5F0F0;
+    border-color: #F5F0F0;
+    color: #4a4a4a;
+}
+
+.btn-light:hover {
+    background-color: #e0e0e0;
+    border-color: #e0e0e0;
+}
+
+/* Typography Highlights */
+.italic-highlight {
+    font-family: var(--font-heading);
+    font-style: italic;
+    color: var(--primary-color);
+}
+
+/* Divider */
+.divider .line {
+    width: 40px;
+    height: 1px;
+    background-color: var(--primary-color);
+    opacity: 0.5;
+}
+
+.divider .dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+/* Custom Image Shapes */
+.rounded-custom-1 {
+    border-radius: 200px 200px 20px 20px;
+}
+
+.rounded-custom-2 {
+    border-radius: 200px 200px 20px 20px;
+    /* Consistent or different if desired */
+}
+
+.rounded-custom-3 {
+    border-radius: 200px 200px 20px 20px;
+}
+
+/* Responsive adjustments for shapes on mobile */
+@media (max-width: 991.98px) {
+
+    .rounded-custom-1,
+    .rounded-custom-2,
+    .rounded-custom-3 {
+        border-radius: 20px;
+        height: auto;
+        /* Fixed height for consistency on mobile */
+    }
+}
+
+/* Cards customization */
+.location-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 24px;
+    background-color: var(--white);
+}
+
+.location-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .1) !important;
+}
+
+/* Help Section */
+.help-card {
+    background-color: #FFF0F2;
+    border-radius: 24px;
+    border: 1px solid #FFE0E5;
+    max-width: 800px;
+}
+
+.bg-light-pink {
+    background-color: transparent;
+    /* Or a specific section color if needed */
+}
+
+.letter-spacing-1 {
+    letter-spacing: 1px;
+}
