@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-
+=======
 document.addEventListener('DOMContentLoaded', () => {
     // Copy Address Functionality
     const copyButtons = document.querySelectorAll('.copy-btn');
@@ -126,4 +126,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-
+>>>>>>> 10586ba453cf0579b6e223c4eaaa0dc75bbb87cc
